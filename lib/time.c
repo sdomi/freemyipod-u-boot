@@ -63,7 +63,7 @@ ulong timer_get_boot_us(void)
 }
 
 #else
-extern unsigned long __weak timer_read_counter(void);
+unsigned long timer_read_counter(void);
 #endif
 
 #if CONFIG_IS_ENABLED(TIMER)
